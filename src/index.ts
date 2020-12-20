@@ -5,7 +5,7 @@ import { Event } from './interfaces/Event';
 /**
  * Class in charge of handling the events launched from node.js through laravel events.
  */
-class SocketModule {
+export default class SocketModule {
 
     /**
      * Subscribed events.
@@ -114,5 +114,3 @@ class SocketModule {
         return this.channel("private-" + name);
     }
 }
-
-export const Socket = SocketModule;
