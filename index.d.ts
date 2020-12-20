@@ -1,5 +1,5 @@
 
-type listen = (event: string, func: () => void) => {listen};
+type listen = (event: string, func: () => void) => {listen: listen};
 
 /**
  * Class in charge of handling the events launched from node.js through laravel events.
