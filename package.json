@@ -1,0 +1,39 @@
+{
+  "name": "socket-module",
+  "version": "0.0.1",
+  "description": "Github",
+  "types": "index.d.ts",
+  "main": "dist/main.js",
+  "scripts": {
+    "dev": "node node_modules/cross-env/src/bin/cross-env.js NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "watch": "node node_modules/cross-env/src/bin/cross-env.js NODE_ENV=development node_modules/webpack/bin/webpack.js --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "hot": "node node_modules/cross-env/src/bin/cross-env.js NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "production": "node node_modules/cross-env/src/bin/cross-env.js NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --config=node_modules/laravel-mix/setup/webpack.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CuboID-projects/socket-module.git"
+  },
+  "keywords": [
+    "socket",
+    "client",
+    "typescript"
+  ],
+  "author": "planir <planir11@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CuboID-projects/socket-module/issues"
+  },
+  "homepage": "https://github.com/CuboID-projects/socket-module#readme",
+  "devDependencies": {
+    "postcss": "^8.1.14",
+    "ts-loader": "^8.0.12",
+    "typescript": "^4.1.3",
+    "webpack": "^5.11.0",
+    "webpack-cli": "^4.2.0"
+  },
+  "dependencies": {
+    "socket.io-client": "^3.0.4",
+    "micromatch": "^4.0.2"
+  }
+}
