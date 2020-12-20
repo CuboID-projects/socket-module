@@ -51,3 +51,5 @@ declare class Socket {
         listen: listen
     }
 }
+
+export {Socket};
