@@ -37,7 +37,7 @@ class SocketModule {
      * 
      * @returns {SocketIOClient.Emitter}
      */
-    on(event: string, fn: () => any) {
+    on(event: string, fn: (data: any) => any) {
         return this.io.on(event, fn);
     }
 

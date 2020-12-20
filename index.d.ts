@@ -33,7 +33,7 @@ declare class Socket {
      * @param {() => any} fn - Event's function.
      * 
      */
-    on(event: string, fn: () => any): SocketIOClient.Emitter;
+    on(event: string, fn: (data: any) => any): SocketIOClient.Emitter;
 
     /**
      * Get io instance.
