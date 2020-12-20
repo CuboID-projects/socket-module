@@ -2,7 +2,13 @@ const path = require('path');
 
 module.exports = {
     entry: './src/index.ts',
-    externals: ["socket.io-client", "micromatch"],
+    output: {
+        filename: 'main.js',
+        path: path.resolve(__dirname, 'dist'),
+        library: 'Socket',
+        libraryTarget: 'commonjs'
+    },
+    externals: ["micromatch", "socket.io-client"],
     module: {
         rules: [{
             test: /\.ts?$/,
@@ -25,9 +31,5 @@ module.exports = {
             "crypto-browserify": false,
         },
         extensions: ['.ts', '.js']
-    },
-    output: {
-        filename: 'main.js',
-        path: path.resolve(__dirname, 'dist')
     }
 };
