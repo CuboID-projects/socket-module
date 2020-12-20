@@ -1,4 +1,4 @@
-import { io, Socket as SocketIO } from "socket.io-client";
+import {default as io, Socket as socket} from "socket.io-client";
 import micromatch from "micromatch";
 import { Event } from './interfaces/Event';
 
@@ -16,14 +16,14 @@ class SocketModule {
 
     /**
      * Socket.io instance.
-     * 
-     * @var {SocketIO} io
+     *
+     * @var {io.Socket} io
      */
-    private io!: SocketIO;
+    private io!: typeof socket;
 
     /**
      * Init a socket io instance.
-     * 
+     *
      * @param {string} host
      */
     constructor(host: string) {
