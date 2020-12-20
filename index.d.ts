@@ -27,6 +27,22 @@ declare class Socket {
     private listen(): void
 
     /**
+     * Listen any socket event.
+     * 
+     * @param {string} event - Event's name.
+     * @param {() => any} fn - Event's function.
+     * 
+     */
+    on(event: string, fn: () => any): SocketIOClient.Emitter;
+
+    /**
+     * Get io instance.
+     * 
+     * @returns {SocketIOClient.Socket}
+     */
+    getInstance(): SocketIOClient.Socket;
+
+    /**
      * Emit a socket io event to server.
      *
      * @param args

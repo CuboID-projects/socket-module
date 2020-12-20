@@ -33,6 +33,24 @@ class SocketModule {
     }
 
     /**
+     * Listen any socket event.
+     * 
+     * @returns {SocketIOClient.Emitter}
+     */
+    on(event: string, fn: () => any) {
+        return this.io.on(event, fn);
+    }
+
+    /**
+     * Get io instance.
+     * 
+     * @returns {SocketIOClient.Socket}
+     */
+    getInstance() {
+        return this.io;
+    }
+
+    /**
      * Listen event channels.
      */
     private listenChannels() {
