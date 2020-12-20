@@ -1,6 +1,6 @@
 {
   "name": "socket-module",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "Github",
   "types": "index.d.ts",
   "main": "dist/main.js",

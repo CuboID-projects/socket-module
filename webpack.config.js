@@ -5,7 +5,6 @@ module.exports = {
     output: {
         filename: 'main.js',
         path: path.resolve(__dirname, 'dist'),
-        library: 'Socket',
         libraryTarget: 'commonjs'
     },
     externals: ["micromatch", "socket.io-client"],
