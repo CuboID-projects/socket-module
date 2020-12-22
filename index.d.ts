@@ -36,6 +36,11 @@ declare class Socket {
     on(event: string, fn: (data: any) => any): SocketIOClient.Emitter;
 
     /**
+     * Remove listener of socket event.
+     */
+    off(...args: [string, any?]): SocketIOClient.Emitter;
+
+    /**
      * Get io instance.
      * 
      * @returns {SocketIOClient.Socket}

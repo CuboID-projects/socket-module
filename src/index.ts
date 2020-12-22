@@ -42,6 +42,13 @@ class SocketModule {
     }
 
     /**
+     * Remove listener of socket event.
+     */
+    off(...args: [string, any?]) {
+        return this.io.off(...args);
+    }
+
+    /**
      * Get io instance.
      * 
      * @returns {SocketIOClient.Socket}
